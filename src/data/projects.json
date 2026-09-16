@@ -1,0 +1,168 @@
+[
+  {
+    "title": "Neethi AI",
+    "icon": "/images/avatar.png",
+    "slug": "neethi",
+    "category": "AI",
+    "keywords": [
+      "Python",
+      "FastAPI",
+      "CrewAI",
+      "Qdrant",
+      "RAG",
+      "LangChain",
+      "Next.js",
+      "PostgreSQL",
+      "AI Agents"
+    ],
+    "summary": [
+      "Neethi AI is a multi-agent legal assistant for the Indian legal domain, delivering citation-backed, verified answers for lawyers, citizens, advisors, and police. ",
+      "Built around the 2023 reforms (BNS, BNSS, BSA), it grounds every response in cited sources — because a wrong answer is worse than no answer."
+    ],
+    "year": 2026,
+    "url": "https://github.com/sachineldho24/Neethi",
+    "backgroundImageUrl": "/images/work/neethi/preview-art-v1.webp",
+    "video": "",
+    "previewImageUrl": "/images/work/neethi/preview-art-v1.webp"
+  },
+  {
+    "title": "Ragnition AI",
+    "icon": "/images/avatar.png",
+    "slug": "rag-ai",
+    "category": "AI",
+    "keywords": [
+      "Python",
+      "RAG",
+      "LangChain",
+      "LangGraph",
+      "Ollama",
+      "Gemini",
+      "PostgreSQL",
+      "Tavily"
+    ],
+    "summary": [
+      "Ragnition pairs a web chat interface with a Python RAG agent. The frontend supports conversations, chat titles, and light/dark themes. ",
+      "The backend implements document retrieval, relevance grading, answer checks, and web-search fallback."
+    ],
+    "year": 2025,
+    "url": "https://github.com/Ragnition-AI/rag-ai",
+    "backgroundImageUrl": "/images/work/rag-ai/ragnition-cover.jpg",
+    "video": "ragnition",
+    "previewImageUrl": "/images/work/rag-ai/ragnition-cover.jpg"
+  },
+  {
+    "title": "Framers",
+    "icon": "/images/avatar.png",
+    "slug": "framers",
+    "category": "Product",
+    "keywords": ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Vercel"],
+    "summary": [
+      "A Next.js product built on Supabase and styled with Tailwind CSS, deployed on Vercel — ",
+      "a sandbox for polished, motion-driven web interfaces."
+    ],
+    "year": 2026,
+    "url": "https://framerslab.in/",
+    "backgroundImageUrl": "/images/work/framers/preview-art-v1.webp",
+    "previewImageUrl": "/images/work/framers/preview-art-v1.webp",
+    "video": "framers"
+  },
+  {
+    "title": "CalSnap — Calorie Tracker",
+    "icon": "/images/avatar.png",
+    "slug": "calorie-tracker",
+    "category": "Mobile",
+    "keywords": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Gemini",
+      "Groq",
+      "AI",
+      "Mobile"
+    ],
+    "summary": ["AI meal scanning, nutrition estimates, and food logging."],
+    "year": 2026,
+    "url": "https://github.com/sachineldho24/Calorie_Tracker",
+    "backgroundImageUrl": "/images/work/calorie-tracker/campaign-cover-v1.webp",
+    "previewImageUrl": "/images/work/calorie-tracker/campaign-cover-v1.webp",
+    "video": "calorie-tracker"
+  },
+  {
+    "title": "Career Builder",
+    "icon": "/images/avatar.png",
+    "slug": "career-builder",
+    "category": "Product",
+    "keywords": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Drizzle",
+      "Postgres",
+      "Auth.js",
+      "Anthropic",
+      "Recharts"
+    ],
+    "summary": [
+      "Career Builder is a career-ops cockpit: paste a job description for a live-streaming evaluation of fit, strategy, comp, and interview plans, ",
+      "then tailor your CV, export an ATS-clean PDF, and track applications on an analytics dashboard."
+    ],
+    "year": 2026,
+    "url": "https://career-builder-five.vercel.app",
+    "backgroundImageUrl": "/images/work/career-builder/preview-art-v1.webp",
+    "previewImageUrl": "/images/work/career-builder/preview-art-v1.webp",
+    "video": "career-builder"
+  },
+  {
+    "title": "EyesOff",
+    "icon": "/images/avatar.png",
+    "slug": "eyesoff",
+    "category": "Game",
+    "keywords": ["TypeScript", "Vite", "PixiJS", "WebGL", "Game", "Co-op"],
+    "summary": [
+      "A two-player co-op party game where one player controls the mouse blindly while their partner guides them by voice through six levels — ",
+      "with randomized chaos events that scramble controls and force teams to adapt under pressure."
+    ],
+    "year": 2026,
+    "url": "https://github.com/sachineldho24/EyesOff",
+    "backgroundImageUrl": "/images/work/eyesoff/preview-art-v1.webp",
+    "video": "",
+    "previewImageUrl": "/images/work/eyesoff/preview-art-v1.webp"
+  },
+  {
+    "title": "I am Affirmations",
+    "icon": "/images/avatar.png",
+    "slug": "i-am-affirmations",
+    "category": "Mobile",
+    "keywords": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "Reanimated",
+      "iOS",
+      "Android",
+      "Offline"
+    ],
+    "summary": [],
+    "year": 2026,
+    "url": "https://github.com/sachineldho24/I-am-Affirmations",
+    "backgroundImageUrl": "/images/work/i-am-affirmations/preview-art-v1.webp",
+    "previewImageUrl": "/images/work/i-am-affirmations/preview-art-v1.webp",
+    "video": ""
+  },
+  {
+    "title": "Shawaya Shack",
+    "icon": "/images/avatar.png",
+    "slug": "shawaya-shack",
+    "category": "Web",
+    "keywords": ["Web", "TypeScript"],
+    "summary": [
+      "A responsive restaurant website for Shawaya Shack, pairing bold typography, flame-orange accents, and food photography with a clear menu and brand story. ",
+      "Designed for desktop and mobile, with tailored imagery and layouts that bring the same identity to every screen."
+    ],
+    "year": 2025,
+    "url": "https://www.shawayashack.in/",
+    "backgroundImageUrl": "/images/work/shawaya-shack/preview-art-v1.webp",
+    "previewImageUrl": "/images/work/shawaya-shack/preview-art-v1.webp",
+    "video": "shawaya-shack"
+  }
+]

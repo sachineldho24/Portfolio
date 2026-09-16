@@ -1,0 +1,28 @@
+WEBVTT
+
+00:00.000 --> 00:02.800
+Ragnition. Where retrieval meets reasoning. Built from both repositories.
+
+00:02.800 --> 00:06.000
+Login and registration in the repository frontend.
+
+00:06.000 --> 00:09.000
+Start a conversation. Actual frontend with sample data.
+
+00:09.000 --> 00:15.000
+Compose, send, and read. Prepared sample conversation; no live model generation.
+
+00:15.000 --> 00:19.000
+Rename the chat using the application's title dialog.
+
+00:19.000 --> 00:23.000
+Switch between the application's light and dark themes.
+
+00:23.000 --> 00:27.000
+Reopen a conversation from the sidebar. Sample workspace data.
+
+00:27.000 --> 00:32.000
+Backend source overview: Docling and Chroma, LangGraph, FastAPI and PostgreSQL.
+
+00:32.000 --> 00:36.000
+Ragnition AI. Frontend and backend at github.com/Ragnition-AI.

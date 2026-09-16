@@ -1,0 +1,233 @@
+.route-content:has(.calorie-showcase) {
+  overflow-x: clip;
+}
+body:has(.calorie-showcase[data-playing="true"]) .floating-nav:not(.is-open),
+body:has(.calorie-showcase[data-film-visible="true"])
+  .floating-nav:not(.is-open):not(:focus-within) {
+  visibility: hidden;
+  pointer-events: none;
+}
+.calorie-showcase {
+  padding: 135px 0 84px;
+  color: var(--ink);
+}
+.calorie-heading,
+.calorie-film {
+  width: min(1440px, calc(100% - 64px));
+  margin-inline: auto;
+}
+.calorie-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 12px;
+  color: #697166;
+  min-height: 30px;
+}
+.calorie-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 24px 0 30px;
+}
+.calorie-title-row h1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.065em;
+}
+.calorie-title-row h1 span {
+  color: #72a839;
+}
+.calorie-title-row p {
+  font-size: 13px;
+  color: #758070;
+  margin-top: 9px;
+}
+.calorie-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border: 1px solid #cdd3c8;
+  border-radius: 30px;
+  font-size: 13px;
+  min-height: 44px;
+}
+.calorie-play:hover {
+  background: #e9ede4;
+}
+.calorie-player {
+  position: relative;
+  aspect-ratio: 16/9;
+  background: #e9ece8;
+  overflow: hidden;
+}
+.calorie-player video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.calorie-player.is-portrait {
+  aspect-ratio: 9/16;
+  max-width: 520px;
+  margin-inline: auto;
+}
+.calorie-film-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 11px;
+  color: #758070;
+  margin-top: 17px;
+}
+.calorie-chapters {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-top: 1px solid #d9ded4;
+  border-bottom: 1px solid #d9ded4;
+  margin-top: 23px;
+}
+.calorie-chapters button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  font-size: 13px;
+  padding: 17px 14px;
+  min-height: 58px;
+}
+.calorie-chapters button > span {
+  font-family: SaansMono, monospace;
+  font-size: 10px;
+  color: #899080;
+}
+.calorie-chapters button > svg {
+  margin-left: auto;
+}
+.calorie-chapters button:hover,
+.calorie-chapters button[aria-current="true"] {
+  background: #e9ede4;
+}
+.calorie-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-top: 22px;
+  color: #7e8877;
+  font-size: 10px;
+}
+.calorie-links > div {
+  display: flex;
+  gap: 24px;
+}
+.calorie-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  color: #4d5747;
+  font-size: 12px;
+}
+.calorie-status {
+  font-size: 12px;
+  margin-top: 14px;
+}
+.calorie-error {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  background: #e9ece8ed;
+}
+.calorie-error button {
+  display: inline-flex;
+  gap: 9px;
+  align-items: center;
+  padding: 12px 20px;
+  background: #1c2819;
+  color: white;
+  border-radius: 5px;
+}
+.calorie-error a {
+  font-size: 13px;
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .calorie-showcase {
+    padding-top: 122px;
+  }
+  .calorie-heading,
+  .calorie-film {
+    width: calc(100% - 48px);
+  }
+  .calorie-title-row h1 {
+    font-size: 58px;
+  }
+  .calorie-chapters {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .calorie-chapters button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 640px) {
+  .calorie-showcase {
+    padding-top: 105px;
+    padding-bottom: 55px;
+  }
+  .calorie-heading,
+  .calorie-film {
+    width: calc(100% - 32px);
+  }
+  .calorie-title-row {
+    margin: 20px 0 24px;
+  }
+  .calorie-title-row h1 {
+    font-size: 48px;
+  }
+  .calorie-title-row p {
+    font-size: 11px;
+  }
+  .calorie-play {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+  .calorie-film-meta {
+    font-size: 10px;
+    gap: 12px;
+    margin-top: 13px;
+  }
+  .calorie-chapters {
+    margin-top: 19px;
+  }
+  .calorie-chapters button {
+    gap: 7px;
+    padding: 14px 8px;
+    font-size: 11px;
+    min-height: 52px;
+  }
+  .calorie-chapters button > span {
+    font-size: 9px;
+  }
+  .calorie-links {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+    margin-top: 17px;
+  }
+  .calorie-links > div {
+    gap: 24px;
+  }
+  .calorie-links a {
+    font-size: 11px;
+  }
+  .calorie-links > span {
+    font-size: 9px;
+  }
+}

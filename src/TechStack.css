@@ -1,0 +1,88 @@
+/* MODERN / TECH STACK headline, rebuilt from the reference site's own markup. */
+.tech-stack {
+  padding: 0 16px;
+}
+@media (min-width: 1024px) {
+  .tech-stack {
+    padding: 0 32px;
+    /* Nothing follows the list inside this section, so the empty box under the
+       text would read as a gap against the cards rather than as breathing room.
+       What follows is the pinned skill deck, whose own layout already sets its
+       first card 356px below its top edge; pulling the deck up over the slack
+       merges the two empty bands into one. The 20px of slack left behind keeps
+       the text clear of the deck's background. */
+    margin-bottom: -100px;
+  }
+}
+.letter-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Shorter than the reference's 500/800: with nothing following the list
+     inside this section, its centring slack below the text reads as dead
+     space against the cards rather than as breathing room. The padding is
+     halved in step so the box still clears the text at the widest clamp —
+     it does not affect the gap, since centring splits whatever is left. */
+  height: 500px;
+  margin: 0;
+  padding: 48px 0;
+  list-style: none;
+}
+@media (min-width: 1024px) {
+  .letter-scroll {
+    /* Height tracks the type — two 0.85 lines plus a fixed 240px of roll room —
+       rather than sitting at a flat 620px. A flat height leaves the empty box
+       under the text drifting between ~98px and ~148px as the font clamp moves,
+       which is why the section's negative margin above has to be sized against
+       it. Tying the height to the type pins that slack at 120px at every width.
+       font-size is repeated here only so that `em` resolves. */
+    font-size: clamp(48px, 14vw, 250px);
+    height: calc(1.7em + 240px);
+    padding: 0;
+  }
+}
+/* The line box is exactly one line tall and clips, which is what hides the
+   waiting twin above each glyph and the rolling glyph below it. */
+.tech-line {
+  display: flex;
+  overflow: hidden;
+  font-size: clamp(48px, 14vw, 250px);
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.025em;
+  list-style: none;
+}
+/* The reference sits the second line looser until the lg breakpoint. */
+.tech-line + .tech-line {
+  line-height: 0.9;
+}
+@media (min-width: 1024px) {
+  .tech-line + .tech-line {
+    line-height: 0.85;
+  }
+}
+/* The word break in "TECH STACK" — the reference carries it as a margin on H. */
+.letter-word-gap {
+  margin-right: clamp(16px, 4.5vw, 72px);
+}
+.letter {
+  position: relative;
+  display: inline-block;
+}
+.letter-copy {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

@@ -1,0 +1,214 @@
+.skill-workflow {
+  position: relative;
+  padding: 96px var(--gutter);
+  background: var(--paper);
+}
+.skill-workflow-canvas {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+.skill-workflow-row {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid color-mix(in srgb, var(--paper) 24%, var(--ink));
+  border-radius: 16px;
+  background: linear-gradient(
+    155deg,
+    var(--panel) 0%,
+    var(--ink) 48%,
+    color-mix(in srgb, var(--ink) 65%, black) 100%
+  );
+  color: var(--paper);
+  box-shadow:
+    inset 0 2px 2px color-mix(in srgb, var(--paper) 32%, transparent),
+    inset 2px 0 3px color-mix(in srgb, var(--paper) 12%, transparent),
+    inset -2px -3px 5px color-mix(in srgb, black 65%, transparent),
+    0 3px 4px color-mix(in srgb, var(--ink) 24%, transparent),
+    0 14px 20px -6px color-mix(in srgb, var(--ink) 38%, transparent),
+    0 28px 32px -14px color-mix(in srgb, var(--ink) 32%, transparent);
+}
+.skill-workflow-label {
+  margin-bottom: 20px;
+  font:
+    600 14px/1.2 SaansMono,
+    monospace;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.skill-workflow-cells {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  gap: 10px;
+  flex: 1;
+}
+.skill-workflow-cell {
+  display: flex;
+  flex: 1 1 auto;
+  min-height: 64px;
+  /* Keep the hit area stationary while its link lifts above the card. */
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font:
+    500 13px/1.2 SaansMono,
+    monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+.skill-workflow-link {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: inherit;
+  background: linear-gradient(155deg, var(--panel), var(--ink));
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--paper) 16%, transparent),
+    inset 1px 0 0 color-mix(in srgb, var(--paper) 5%, transparent),
+    inset 0 -1px 0 color-mix(in srgb, black 30%, transparent),
+    0 3px 5px color-mix(in srgb, black 24%, transparent);
+}
+.skill-workflow-link:focus-visible {
+  outline-offset: 3px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--paper) 28%, transparent),
+    inset 1px 0 0 color-mix(in srgb, var(--paper) 9%, transparent),
+    inset 0 -1px 0 color-mix(in srgb, black 30%, transparent),
+    0 7px 10px color-mix(in srgb, black 40%, transparent),
+    0 13px 18px -6px color-mix(in srgb, black 38%, transparent);
+}
+.skill-workflow-link:focus-visible .skill-workflow-logo-inverted {
+  filter: none;
+}
+.skill-workflow-link:focus-visible .skill-workflow-logo-white {
+  filter: invert(1);
+}
+@media (hover: hover) and (pointer: fine) {
+  .skill-workflow-cell:hover .skill-workflow-link {
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow:
+      inset 0 1px 0 color-mix(in srgb, var(--paper) 28%, transparent),
+      inset 1px 0 0 color-mix(in srgb, var(--paper) 9%, transparent),
+      inset 0 -1px 0 color-mix(in srgb, black 30%, transparent),
+      0 7px 10px color-mix(in srgb, black 40%, transparent),
+      0 13px 18px -6px color-mix(in srgb, black 38%, transparent);
+  }
+  .skill-workflow-cell:hover .skill-workflow-logo-inverted {
+    filter: none;
+  }
+  .skill-workflow-cell:hover .skill-workflow-logo-white {
+    filter: invert(1);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .skill-workflow-link {
+    transition:
+      transform 220ms var(--ease),
+      box-shadow 220ms var(--ease);
+  }
+  .skill-workflow-link:focus-visible {
+    transform: translateY(-5px);
+  }
+}
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .skill-workflow-cell:hover .skill-workflow-link {
+    transform: translateY(-5px);
+  }
+}
+.skill-workflow-logo {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  object-fit: contain;
+}
+.skill-workflow-logo-inverted {
+  filter: invert(1);
+}
+.skill-workflow-cells[data-count="4"] .skill-workflow-cell {
+  flex-basis: calc(50% - 5px);
+}
+@media (max-width: 599px) {
+  .skill-workflow-canvas {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1100px) and (min-height: 600px) and (prefers-reduced-motion: no-preference) {
+  .skill-workflow {
+    height: 240svh;
+    padding: 0;
+  }
+  .skill-workflow-pin {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    padding: 132px var(--gutter) 136px;
+    display: grid;
+    place-items: center;
+  }
+  .skill-workflow-stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 1420px;
+  }
+  .skill-workflow-canvas {
+    position: absolute;
+    width: 1420px;
+    height: 480px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(var(--cards-scale, 0.65));
+    transform-origin: center;
+    perspective: 1200px;
+  }
+  .skill-workflow-row {
+    position: absolute;
+    left: 480px;
+    top: 125px;
+    width: 460px;
+    height: 230px;
+    will-change: transform;
+  }
+  .skill-workflow-cells[data-count="6"] {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .skill-workflow-cells[data-count="6"] .skill-workflow-cell {
+    min-width: 0;
+  }
+  .skill-workflow-cells[data-count="6"] .skill-workflow-link {
+    gap: 6px;
+    padding: 8px;
+    font-size: 11px;
+  }
+  .skill-workflow-cells[data-count="7"] {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .skill-workflow-cells[data-count="7"] .skill-workflow-cell {
+    min-width: 0;
+  }
+  /* Center the 6th tool (Claude Code) across two columns so row 2 reads
+     1 + 2 + 1 and fills the width uniformly instead of leaving a gap. */
+  .skill-workflow-cells[data-count="7"] .skill-workflow-cell:nth-child(6) {
+    grid-column: span 2;
+  }
+  .skill-workflow-cells[data-count="7"] .skill-workflow-link {
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px 4px;
+    font-size: 10px;
+  }
+}

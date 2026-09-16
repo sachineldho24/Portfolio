@@ -1,0 +1,53 @@
+{
+  "neethi": [
+    {
+      "half": false,
+      "url": "/images/work/neethi/preview-art-v1.webp"
+    }
+  ],
+  "rag-ai": [
+    {
+      "half": false,
+      "url": "/videos/ragnition/showcase.mp4"
+    }
+  ],
+  "framers": [
+    {
+      "half": false,
+      "url": "/videos/framers/framers-showcase.mp4"
+    },
+    {
+      "half": false,
+      "url": "/images/work/framers/preview-art-v1.webp"
+    }
+  ],
+  "calorie-tracker": [
+    {
+      "half": false,
+      "url": "/videos/calorie-tracker/showcase.mp4"
+    }
+  ],
+  "career-builder": [
+    {
+      "half": false,
+      "url": "/videos/career-builder/showcase.mp4"
+    }
+  ],
+  "eyesoff": [
+    {
+      "half": false,
+      "url": "/images/work/eyesoff/preview-art-v1.webp"
+    }
+  ],
+  "i-am-affirmations": [],
+  "shawaya-shack": [
+    {
+      "half": false,
+      "url": "/videos/shawaya-shack/shawaya-shack-showcase.mp4"
+    },
+    {
+      "half": false,
+      "url": "/images/work/shawaya-shack/preview-art-v1.webp"
+    }
+  ]
+}
