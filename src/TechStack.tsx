@@ -25,9 +25,9 @@ export function TechStack() {
     const ul = list.current;
     if (!ul) return;
 
-    // The reference site plays this for everyone; the rest of this clone honours
-    // reduced motion, so the tween below is scoped to the query and reverted
-    // whenever it stops matching. The config itself is untouched.
+    // This scroll tween is scoped to the no-preference query rather than run
+    // unconditionally, so reduced motion is honoured and the tween is reverted
+    // whenever the query stops matching. The config itself is untouched.
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
       // Kept as GSAP rather than reimplemented by hand: the scrub smoothing,

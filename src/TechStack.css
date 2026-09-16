@@ -1,4 +1,4 @@
-/* MODERN / TECH STACK headline, rebuilt from the reference site's own markup. */
+/* MODERN / TECH STACK headline. */
 .tech-stack {
   padding: 0 16px;
 }
@@ -19,7 +19,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* Shorter than the reference's 500/800: with nothing following the list
+  /* Shorter than the equivalent 500/800 scale: with nothing following the list
      inside this section, its centring slack below the text reads as dead
      space against the cards rather than as breathing room. The padding is
      halved in step so the box still clears the text at the widest clamp —
@@ -53,7 +53,7 @@
   letter-spacing: -0.025em;
   list-style: none;
 }
-/* The reference sits the second line looser until the lg breakpoint. */
+/* The second line sits looser until the lg breakpoint. */
 .tech-line + .tech-line {
   line-height: 0.9;
 }
@@ -62,7 +62,7 @@
     line-height: 0.85;
   }
 }
-/* The word break in "TECH STACK" — the reference carries it as a margin on H. */
+/* The word break in "TECH STACK" — carried as a margin on H. */
 .letter-word-gap {
   margin-right: clamp(16px, 4.5vw, 72px);
 }

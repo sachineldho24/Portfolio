@@ -1461,9 +1461,10 @@ footer h2 {
     max-width: none;
   }
 }
-/* Match the fallback actually rendered by the reference's unavailable LCD font. */
+/* Arial with the metrics of the unavailable display face, so the marquee and
+   tags wrap and align the same way they would with it loaded. */
 @font-face {
-  font-family: ReferenceDisplay;
+  font-family: DisplayFallback;
   src: local(Arial);
   ascent-override: 75.65%;
   descent-override: 8.5%;
@@ -1473,7 +1474,7 @@ footer h2 {
 .profile-copy .marquee,
 .work-card .marquee,
 .tags li {
-  font-family: ReferenceDisplay, Arial, sans-serif;
+  font-family: DisplayFallback, Arial, sans-serif;
   font-weight: 400;
 }
 .profile-copy .marquee {

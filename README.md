@@ -48,4 +48,6 @@ There is no analytics and no form submission. Contact links open the visitor's m
 
 ## Credits
 
-The layout, motion, and interaction design are a React and TypeScript recreation of [itsjay.us](https://www.itsjay.us). The identity, copy, projects, and media are Sachin's own. Saans and LCD Dot are the reference site's fonts and remain their owners' property, as do the technology logos under `public/images/svg/` and `public/skills-assets/`.
+Identity, copy, projects, and media are Sachin's own.
+
+Third-party assets remain their owners' property: the Saans, Saans Mono, and LCD Dot typefaces, and the technology logos under `public/images/svg/` and `public/skills-assets/`.

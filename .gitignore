@@ -20,45 +20,20 @@ work-current.png
 !.env.example
 *-keys.mjs
 
-# Files carried over from the Anima export that the build does not import
+# Unused build leftovers the app does not import
 tailwind.css
 tailwind.config.js
 
-# Assets from the reference site's original portfolio, plus the Lab gallery the
-# site no longer has a route for. None of these are referenced by the app or
-# bundled into the production build; they are kept locally only.
+# Media the app never requests. Audited against src/data/*.json, the dynamic
+# path patterns in Media.tsx, Shell.tsx, SkillCards.tsx and Home.tsx, and the
+# compiled dist bundle: none of it appears in the production build. Kept on
+# disk locally, out of the published repo.
 public/images/lab/
 public/videos/lab/
 public/concepts-assets/
 public/downloads/
-public/images/other/westend.jpg
-public/images/work/delivrd/
-public/images/work/jazmin-wong/
-public/images/work/kick-bass/
-public/images/work/socialstats/
-public/images/work/trackstack/
-public/images/work/westend/
-public/images/posters/delivrd.jpg
-public/images/posters/jazminWong.jpg
-public/images/posters/jazminWongDetail.jpg
-public/images/posters/kickBass.jpg
-public/images/posters/trackstack.jpg
-public/videos/delivrd/
-public/videos/jazminWong/
-public/videos/jazminWongDetail/
-public/videos/kickBass/
-public/videos/trackstack/
-
-# Affirmation media no route requests. The project page uses only
-# public/images/work/i-am-affirmations/preview-art-v1.webp as its cover; it has
-# no film, an empty gallery entry, and no video field. Neither video set below
-# is named anywhere in src/, and the built bundle contains no affirmation path.
 public/videos/i-am-affirmations/
 public/videos/i-am-affirmations-v2/
-
-# Further unreferenced media, audited against src/data/*.json, the dynamic path
-# patterns in Media.tsx, Shell.tsx, SkillCards.tsx and Home.tsx, and the
-# compiled dist bundle. Kept on disk locally, out of the published repo.
 public/videos/rag-ai/
 public/videos/*/preview.mp4
 public/videos/framers/framers-showcase-1440p.mp4

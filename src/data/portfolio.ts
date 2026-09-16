@@ -15,6 +15,8 @@ export const profile = {
   about:
     "Computer engineer with an AI edge, I build intelligent products end to end: multi-agent systems, RAG pipelines, and vision-powered apps, wrapped in motion-rich interfaces. I sweat the details and ship software people love to use.",
 };
+// A name is present here when its stream exists under public/videos/<name>/;
+// the value is only a presence marker, so every entry reads "local".
 export const videos: Record<string, string> = videoData;
 export const projects = projectData.map((p) => ({ ...p }));
 export type Project = (typeof projects)[number];

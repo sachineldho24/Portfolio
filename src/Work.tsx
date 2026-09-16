@@ -211,7 +211,7 @@ export function ProjectDetail() {
                       )}
                     </video>
                   ) : m.url.endsWith(".m3u8") ? (
-                    <Media name="jazminWongDetail" />
+                    <Media src={m.url} />
                   ) : (
                     <img
                       src={m.url}

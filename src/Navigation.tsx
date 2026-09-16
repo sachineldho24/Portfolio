@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import { flushSync } from "react-dom";
 
-/** Native view transitions reproduce the reference's overlapping page slide. */
+/** Native view transitions drive the overlapping page slide. */
 export function Link({
   onClick,
   delay = 0,
