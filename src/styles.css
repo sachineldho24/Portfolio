@@ -1536,17 +1536,20 @@ footer h2 {
   letter-spacing: -0.025em;
   text-align: left;
 }
+.about-desktop-copy {
+  --about-word-scale: 1;
+}
 .about-desktop-copy span {
   display: inline-block;
 }
 .about-desktop-copy .word1 {
-  padding-left: 0.8em;
+  padding-left: calc(0.8em * var(--about-word-scale));
 }
 .about-desktop-copy .word2 {
-  padding-right: 1.6em;
+  padding-right: calc(1.6em * var(--about-word-scale));
 }
 .about-desktop-copy .word3 {
-  padding-left: 2.4em;
+  padding-left: calc(2.4em * var(--about-word-scale));
 }
 .about-video {
   height: auto;
@@ -1560,8 +1563,7 @@ footer h2 {
   overflow: hidden;
   border-radius: 12px;
 }
-.mobile-about-video,
-.about-mobile-copy {
+.mobile-about-video {
   display: none;
 }
 .work-cover {
@@ -1676,11 +1678,12 @@ footer h2 {
   .about {
     gap: 16px;
   }
-  .about-desktop-copy,
   .about-video {
     display: none;
   }
-  .about-mobile-copy,
+  .about-desktop-copy {
+    --about-word-scale: 0.3125;
+  }
   .mobile-about-video {
     display: block;
   }

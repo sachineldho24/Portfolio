@@ -77,7 +77,9 @@
     inset 0 -1px 0 color-mix(in srgb, black 30%, transparent),
     0 3px 5px color-mix(in srgb, black 24%, transparent);
 }
-.skill-workflow-link:focus-visible {
+.skill-workflow-link:focus-visible,
+.skill-workflow-link[data-pressed="true"],
+.skill-workflow-cell:active .skill-workflow-link {
   outline-offset: 3px;
   background: var(--paper);
   color: var(--ink);
@@ -88,10 +90,14 @@
     0 7px 10px color-mix(in srgb, black 40%, transparent),
     0 13px 18px -6px color-mix(in srgb, black 38%, transparent);
 }
-.skill-workflow-link:focus-visible .skill-workflow-logo-inverted {
+.skill-workflow-link:focus-visible .skill-workflow-logo-inverted,
+.skill-workflow-link[data-pressed="true"] .skill-workflow-logo-inverted,
+.skill-workflow-cell:active .skill-workflow-logo-inverted {
   filter: none;
 }
-.skill-workflow-link:focus-visible .skill-workflow-logo-white {
+.skill-workflow-link:focus-visible .skill-workflow-logo-white,
+.skill-workflow-link[data-pressed="true"] .skill-workflow-logo-white,
+.skill-workflow-cell:active .skill-workflow-logo-white {
   filter: invert(1);
 }
 @media (hover: hover) and (pointer: fine) {
@@ -118,7 +124,9 @@
       transform 220ms var(--ease),
       box-shadow 220ms var(--ease);
   }
-  .skill-workflow-link:focus-visible {
+  .skill-workflow-link:focus-visible,
+  .skill-workflow-link[data-pressed="true"],
+  .skill-workflow-cell:active .skill-workflow-link {
     transform: translateY(-5px);
   }
 }

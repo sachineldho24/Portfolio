@@ -108,15 +108,22 @@ function About() {
   useEffect(() => {
     const el = text.current;
     if (!el) return;
+    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
     let raf = 0;
     const update = () => {
       raf = 0;
-      if (
-        innerWidth < 1024 ||
-        matchMedia("(prefers-reduced-motion: reduce)").matches
-      )
+      const words = el.querySelectorAll<HTMLElement>("span");
+      if (reducedMotion.matches) {
+        words.forEach((word) => word.style.removeProperty("transform"));
         return;
-      el.querySelectorAll<HTMLElement>("span").forEach((span) => {
+      }
+      // Match the reserved word spacing at each breakpoint, so the same
+      // scroll movement stays inside the narrower mobile text column.
+      const scale =
+        parseFloat(
+          getComputedStyle(el).getPropertyValue("--about-word-scale"),
+        ) || 1;
+      words.forEach((span) => {
         const r = span.getBoundingClientRect(),
           p = Math.max(
             0,
@@ -132,7 +139,7 @@ function About() {
             : span.classList.contains("word3")
               ? -2.4
               : 0;
-        span.style.transform = `translateX(${shift * p}em)`;
+        span.style.transform = `translateX(${shift * scale * p}em)`;
       });
     };
     const scroll = () => {
@@ -140,10 +147,12 @@ function About() {
     };
     addEventListener("scroll", scroll, { passive: true });
     addEventListener("resize", scroll);
+    reducedMotion.addEventListener("change", scroll);
     update();
     return () => {
       removeEventListener("scroll", scroll);
       removeEventListener("resize", scroll);
+      reducedMotion.removeEventListener("change", scroll);
       cancelAnimationFrame(raf);
     };
   }, []);
@@ -163,7 +172,6 @@ function About() {
             </Fragment>
           ))}
         </p>
-        <p className="about-mobile-copy reveal">{profile.about}</p>
       </div>
       <div className="about-video">
         <div className="about-sticky-video">

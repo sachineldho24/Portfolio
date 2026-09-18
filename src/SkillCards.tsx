@@ -15,7 +15,15 @@ const cards = [
   ],
   [
     "Tools",
-    ["Git", "GitHub", "VS Code", "Cursor", "Antigravity", "Claude Code", "Codex"],
+    [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Cursor",
+      "Antigravity",
+      "Claude Code",
+      "Codex",
+    ],
   ],
   [
     "Databases",
@@ -112,6 +120,14 @@ function SkillLogo({ name }: { name: string }) {
   }
   const Icon = name === "REST API" ? Braces : Sparkles;
   return <Icon className="skill-workflow-logo" size={28} aria-hidden="true" />;
+}
+
+function clearSkillPress({
+  currentTarget,
+}: {
+  currentTarget: HTMLAnchorElement;
+}) {
+  delete currentTarget.dataset.pressed;
 }
 
 /** Deck -> fan -> sequential grid, adapted from terminal-portfolio's getCardStyle. */
@@ -253,6 +269,15 @@ export function SkillCards() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`${name} (opens in a new tab)`}
+                        onPointerDown={(event) => {
+                          if (event.pointerType !== "mouse") {
+                            event.currentTarget.dataset.pressed = "true";
+                          }
+                        }}
+                        onPointerUp={clearSkillPress}
+                        onPointerCancel={clearSkillPress}
+                        onPointerLeave={clearSkillPress}
+                        onBlur={clearSkillPress}
                       >
                         <SkillLogo name={name} />
                         <span>{name}</span>
