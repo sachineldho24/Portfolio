@@ -1285,6 +1285,9 @@ footer h2 {
   footer {
     padding: 32px 8px;
   }
+  footer h2 {
+    font-size: 10vw;
+  }
   .footer-grid {
     gap: 8px;
   }
@@ -2139,6 +2142,55 @@ html[data-transitioning] .route-content {
   }
   .contact-hand {
     font-size: 18px;
+  }
+}
+/* Keep fixed controls inside the phone viewport, independently of page content. */
+@media (max-width: 767px) {
+  .site-header {
+    top: max(16px, env(safe-area-inset-top));
+    left: max(16px, env(safe-area-inset-left));
+    right: max(16px, env(safe-area-inset-right));
+    gap: 12px;
+    font-size: 14px;
+  }
+  .site-header > div {
+    min-width: 0;
+  }
+  .contact-pill {
+    flex-shrink: 0;
+    height: 44px;
+    padding: 10px 14px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .contact-hand {
+    display: none;
+  }
+  .floating-nav {
+    width: min(360px, calc(100vw - 32px));
+    max-width: calc(
+      100vw - max(16px, env(safe-area-inset-left)) -
+        max(16px, env(safe-area-inset-right))
+    );
+    bottom: max(16px, env(safe-area-inset-bottom));
+    padding: 8px;
+  }
+  .profile-row {
+    gap: 12px;
+  }
+  .profile-avatar {
+    width: 48px;
+    height: 48px;
+  }
+  .profile-copy > a {
+    font-size: clamp(14px, 4vw, 16px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
