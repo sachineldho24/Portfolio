@@ -116,8 +116,12 @@ const FILMS: Record<
     poster: "/images/posters/eyesoff.jpg",
     captions: "/videos/eyesoff/captions-en.vtt",
     download: "/videos/eyesoff/showcase-1440p.mp4",
-    primaryLabel: "Source",
-    note: "A 30-second risograph-style showcase edited in HyperFrames from captures of the game running locally (it isn't deployed yet); the game screens are real footage, and the lines quoted from the game are its own text. It shows the nine-level build: Bug Hunt, Forgery and Satellite Uplink were added alongside this film so each level could be filmed under a different chaos effect. Takes were recorded frame by frame, with levels opened and chaos effects fired by name through the game's debug hook so each effect lands on the beat. The white arrow is drawn over the game's effective pointer, so chaos-bent movement shows. Music from the HeyGen audio library.",
+    primaryLabel: "Play it",
+    note: "A 30-second risograph-style showcase edited in HyperFrames from captures of the game running on a local dev server, the same nine-level build that's live on GitHub Pages; the game screens are real footage, and the lines quoted from the game are its own text. It shows the nine-level build: Bug Hunt, Forgery and Satellite Uplink were added alongside this film so each level could be filmed under a different chaos effect. Takes were recorded frame by frame, with levels opened and chaos effects fired by name through the game's debug hook so each effect lands on the beat. The white arrow is drawn over the game's effective pointer, so chaos-bent movement shows. Music from the HeyGen audio library.",
+    source: {
+      href: "https://github.com/sachineldho24/EyesOff",
+      label: "Source",
+    },
   },
 };
 
