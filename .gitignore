@@ -62,3 +62,6 @@ public/images/posters/i-am-affirmations.jpg
 public/images/posters/i-am-affirmations-v2.jpg
 public/images/posters/rag-ai.jpg
 public/fonts/Respira-Black.otf
+
+.vercel
+.env*

@@ -105,6 +105,13 @@ const FILMS: Record<
       label: "Source",
     },
   },
+  "deadlock-26": {
+    poster: "/images/posters/deadlock-26.jpg",
+    captions: "/videos/deadlock-26/captions-en.vtt",
+    download: "/videos/deadlock-26/showcase-1440p.mp4",
+    primaryLabel: "Play it",
+    note: "A 30-second recap edited in HyperFrames from screen captures of the deployed game; every quoted line is the game's own text. Takes after the opening start at the act they film. No puzzle is solved and no answer appears on screen. Music from the HeyGen audio library.",
+  },
 };
 
 export function ProjectDetail() {

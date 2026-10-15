@@ -1,0 +1,8 @@
+node_modules
+dist
+artifacts
+output
+reference
+scripts
+.git
+README.md

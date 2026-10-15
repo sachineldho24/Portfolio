@@ -129,6 +129,22 @@
     "previewImageUrl": "/images/work/eyesoff/preview-art-v1.webp"
   },
   {
+    "title": "Deadlock 26",
+    "icon": "/images/avatar.png",
+    "slug": "deadlock-26",
+    "category": "Game",
+    "keywords": ["React", "Vite", "GSAP", "Framer Motion", "Zustand", "Narrative Design", "Puzzle Design"],
+    "summary": [
+      "Deadlock 26 is a murder mystery you play in the browser. A streamer dies live on air, with 12,403 people watching. ",
+      "You investigate from inside his machine — his server, his files, his memories — and something in there is still asking who did it."
+    ],
+    "year": 2026,
+    "url": "https://deadlock26.pages.dev",
+    "backgroundImageUrl": "/images/work/deadlock-26/preview-art.webp",
+    "previewImageUrl": "/images/work/deadlock-26/preview-art.webp",
+    "video": "deadlock-26"
+  },
+  {
     "title": "I am Affirmations",
     "icon": "/images/avatar.png",
     "slug": "i-am-affirmations",
