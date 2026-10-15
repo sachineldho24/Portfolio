@@ -145,27 +145,6 @@
     "video": "deadlock-26"
   },
   {
-    "title": "I am Affirmations",
-    "icon": "/images/avatar.png",
-    "slug": "i-am-affirmations",
-    "category": "Mobile",
-    "keywords": [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Reanimated",
-      "iOS",
-      "Android",
-      "Offline"
-    ],
-    "summary": [],
-    "year": 2026,
-    "url": "https://github.com/sachineldho24/I-am-Affirmations",
-    "backgroundImageUrl": "/images/work/i-am-affirmations/preview-art-v1.webp",
-    "previewImageUrl": "/images/work/i-am-affirmations/preview-art-v1.webp",
-    "video": ""
-  },
-  {
     "title": "Shawaya Shack",
     "icon": "/images/avatar.png",
     "slug": "shawaya-shack",
