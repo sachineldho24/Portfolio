@@ -119,13 +119,13 @@
     "category": "Game",
     "keywords": ["TypeScript", "Vite", "PixiJS", "WebGL", "Game", "Co-op"],
     "summary": [
-      "A two-player co-op party game where one player controls the mouse blindly while their partner guides them by voice through six levels — ",
+      "A two-player co-op party game where one player controls the mouse blindly while their partner guides them by voice through nine levels — ",
       "with randomized chaos events that scramble controls and force teams to adapt under pressure."
     ],
     "year": 2026,
     "url": "https://github.com/sachineldho24/EyesOff",
     "backgroundImageUrl": "/images/work/eyesoff/preview-art-v1.webp",
-    "video": "",
+    "video": "eyesoff",
     "previewImageUrl": "/images/work/eyesoff/preview-art-v1.webp"
   },
   {

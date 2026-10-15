@@ -112,6 +112,13 @@ const FILMS: Record<
     primaryLabel: "Play it",
     note: "A 30-second recap edited in HyperFrames from screen captures of the deployed game; every quoted line is the game's own text. Takes after the opening start at the act they film. No puzzle is solved and no answer appears on screen. Music from the HeyGen audio library.",
   },
+  eyesoff: {
+    poster: "/images/posters/eyesoff.jpg",
+    captions: "/videos/eyesoff/captions-en.vtt",
+    download: "/videos/eyesoff/showcase-1440p.mp4",
+    primaryLabel: "Source",
+    note: "A 30-second risograph-style showcase edited in HyperFrames from captures of the game running locally (it isn't deployed yet); the game screens are real footage, and the lines quoted from the game are its own text. It shows the nine-level build: Bug Hunt, Forgery and Satellite Uplink were added alongside this film so each level could be filmed under a different chaos effect. Takes were recorded frame by frame, with levels opened and chaos effects fired by name through the game's debug hook so each effect lands on the beat. The white arrow is drawn over the game's effective pointer, so chaos-bent movement shows. Music from the HeyGen audio library.",
+  },
 };
 
 export function ProjectDetail() {
